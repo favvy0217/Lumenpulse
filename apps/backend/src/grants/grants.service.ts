@@ -7,7 +7,7 @@ import {
 import { ConfigService } from '@nestjs/config';
 import {
   RoundDto,
-  ProjectQfDto,
+  // ProjectQfDto,
   ProjectAllocationDto,
   RoundParticipationMetricsDto,
   ContributionRecordDto,
@@ -213,7 +213,6 @@ export class GrantsService {
       low > 0n ? ((value - low * low) * scale) / (2n * low) : 0n;
     return intPart + remainder;
   }
-
   private formatPercentage(
     part: bigint,
     total: bigint,
